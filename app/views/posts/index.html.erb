@@ -1,12 +1,10 @@
-<header>
-  <div class="header-logo">
-    <a href="/">MiniTweet</a>
-  </div>
-  <ul class="header-menus">
-    <li><a href="/about">MiniTweetについて</a></li>
-  </ul>
-</header>
+<head>
+  <title>MiniTweetApp</title>
+  <%= csrf_meta_tags %>
 
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 <div class="main posts-index">
   <div class="container">
     <% @posts.each do |post| %>
