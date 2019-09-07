@@ -1,17 +1,15 @@
-<head>
-  <title>MiniTweetApp</title>
-  <%= csrf_meta_tags %>
+<header>
+  <div class="header-logo">
+    <a href="/">MiniTweet</a>
+  </div>
+  <ul class="header-menus">
+    <li><a href="/about">MiniTweetについて</a></li>
+  </ul>
+</header>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
 <div class="main posts-index">
   <div class="container">
-    <% @posts.each do |post| %>
-      <div class="posts-index-item">
-        <%= post.content %>
-      </div>
-    <% end %>
+    <div class="posts-index-item">絶対にフリーエンジニアになる!</div>
+    <div class="posts-index-item">Rails実践中！</div>
   </div>
-</div>
 </div>
