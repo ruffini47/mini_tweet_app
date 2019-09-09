@@ -27,4 +27,9 @@ class PostsController < ApplicationController
     @post.save
     redirect_to posts_index_url
   end
+  
+  def destroy
+    redirect_to posts_index_url
+  end
+  
 end
