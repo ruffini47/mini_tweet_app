@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   end
   
   def create
+    redirect_to posts_index_url
   end
   
   def index
