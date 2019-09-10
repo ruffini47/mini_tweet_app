@@ -5,8 +5,11 @@ class PostsController < ApplicationController
   
   def create
     @post = Post.new(content: params[:content])
-    @post.save
-    redirect_to posts_index_url
+    if @post.save
+      redirect_to posts_index_url
+    else
+      render :new
+    end
   end
   
   def index
