@@ -44,7 +44,9 @@ class UsersController < ApplicationController
     else
       render :edit
     end
+  end
 
+  def login_page
   end
   
 end
